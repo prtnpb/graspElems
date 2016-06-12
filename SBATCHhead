@@ -10,4 +10,4 @@
 
 source $HOME/grasp2K_v1_1/make-environment_ifort
 
-cd $WORK/ELEM_FILES
+cd $WORK/ELEM_FILES/graspElems
