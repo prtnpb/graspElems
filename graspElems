@@ -222,10 +222,10 @@ def makeExecs(commList):
           jobFile=open("../../JobSBATCH-"+str(batchFileNum),'w')
           jobFile2=open("../../JobRSCF-"+str(batchFileNum),'w')
           for k in range(len(batchHead)):
-            if i==1:
+            if k==1:
               jobFile.write(batchHead[k].strip()+str(batchFileNum)+"\n")
               jobFile2.write(batchHead[k].strip()+str(batchFileNum)+"RSCF\n")
-            elif i==2:
+            elif k==2:
               jobFile.write(batchHead[k].strip()+str(batchFileNum)+".o%j\n")
               jobFile2.write(batchHead[k].strip()+str(batchFileNum)+"RSCF.o%j\n")
             else:
