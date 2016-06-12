@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH -J myJob
+#SBATCH -o myJob
+#SBATCH -n 16
+#SBATCH -p normal
+#SBATCH -t 30:00:00
+#SBATCH --mail-user=prtnpb@mail.umkc.edu
+#SBATCH --mail-type=begin
+#SBATCH --mail-type=end
+
+source $HOME/grasp2K_v1_1/make-environment_ifort
+
+cd $WORK/ELEM_FILES
