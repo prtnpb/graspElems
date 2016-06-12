@@ -215,6 +215,8 @@ def makeExecs(commList):
 
       if os.path.exists("../../SBATCHhead"):
         if elemCount%numCore==0 and elemCount !=1:
+          jobFile.write("\nwait\n")
+          jobFile2.write("\nwait\n")
           batchFileNum+=1
           jobFile.close()
           jobFile2.close()
@@ -333,7 +335,8 @@ def makeExecs(commList):
       elemCount+=1
 
       
-
+  jobFile.write("\nwait\n")
+  jobFile2.write("\nwait\n")
 
   jobFile.close()
   jobFile2.close()
