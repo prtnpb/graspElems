@@ -314,7 +314,7 @@ def makeExecs(commList):
       g.write(batchHead[0])
       g.write("set -x\n")
 
-      g.write("$GRASP/bin/rscf <<S1\n")
+      g.write("$GRASP/bin/rscf2 <<S1\n")
       g.write("y\ny\n#BLOCKS AS 1's\n")
       g.write("*\n\n100000\nS1\n\n")
 
